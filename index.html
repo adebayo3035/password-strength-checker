@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Password Strength Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h2> Check Password Strength</h2>
+        <hr>
+        <form action="">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="passwordInput" onkeyup="submitCard()">
+            <progress class="progress" id="password_strength" value="0" max="100" name="password_strength">  </progress>
+            <label for="password_strength" id="strength_text"></label>
+        </form>
+        <section class="password-checker">
+            <div class="check">
+                <input type="checkbox" disabled class="checkbox" name="uppercase" id="uppercase"> <label for="uppercase">Capital Letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" disabled class="checkbox" name="lowercase" id="lowercase"> <label for="lowercase">Small Letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" disabled class="checkbox" name="digits" id="numbers"> <label for="digits">Numbers/Digits</label>
+            </div>
+            <div class="check">
+                    <input type="checkbox" disabled class="checkbox" name="symbol" id="special_char"> <label for="symbol">Special Characters</label>
+            </div>
+            
+            
+            
+            
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
